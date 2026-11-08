@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Video Editing | Creative Portfolio</title>
+
+    <!-- CSS UTAMA -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- CSS GALLERY -->
+    <link rel="stylesheet" href="../css/gallery4.css">
+
+    <!-- CSS VIDEO -->
+    <link rel="stylesheet" href="../css/video.css">
+</head>
+
+<body>
+
+    <main class="poster-page">
+
+        <!-- HEADER -->
+        <header class="gallery-header">
+
+            <div class="gallery-top">
+                <p>03 / VIDEO</p>
+
+                <a href="../index.html" class="back-link">
+                    ← BACK TO PROJECTS
+                </a>
+            </div>
+
+            <h1>
+                VIDEO<br>
+                EDITING
+            </h1>
+
+        </header>
+
+
+        <!-- VIDEO GALLERY -->
+        <section class="video-gallery">
+
+            <!-- VIDEO 1 -->
+            <article class="video-item">
+
+                <button
+                    class="video-card"
+                    type="button"
+                    data-video="../videos/video1.mp4"
+                    aria-label="Putar Cinematic Video">
+
+                    <div class="video-thumbnail">
+
+                        <img
+                            src="../images/video/thumbnail1.jpg"
+                            alt="Cinematic Video">
+
+                        <span class="play-icon">▶</span>
+
+                    </div>
+
+                </button>
+
+                <div class="video-info">
+                    <p>VIDEO EDITING / 01</p>
+                    <h3>Cinematic Video</h3>
+                </div>
+
+            </article>
+
+
+            <!-- VIDEO 2 -->
+            <article class="video-item">
+
+                <button
+                    class="video-card"
+                    type="button"
+                    data-video="../videos/video2.mp4"
+                    aria-label="Putar Creative Video">
+
+                    <div class="video-thumbnail">
+
+                        <img
+                            src="../images/video/thumbnail2.jpg"
+                            alt="Creative Video">
+
+                        <span class="play-icon">▶</span>
+
+                    </div>
+
+                </button>
+
+                <div class="video-info">
+                    <p>VIDEO EDITING / 02</p>
+                    <h3>Creative Video</h3>
+                </div>
+
+            </article>
+
+
+            <!-- VIDEO 3 -->
+            <article class="video-item">
+
+                <button
+                    class="video-card"
+                    type="button"
+                    data-video="../videos/video3.mp4"
+                    aria-label="Putar Event Documentation">
+
+                    <div class="video-thumbnail">
+
+                        <img
+                            src="../images/video/thumbnail3.jpg"
+                            alt="Event Documentation">
+
+                        <span class="play-icon">▶</span>
+
+                    </div>
+
+                </button>
+
+                <div class="video-info">
+                    <p>VIDEO EDITING / 03</p>
+                    <h3>Event Documentation</h3>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="gallery-footer">
+            <p>© 2026 — CREATIVE PORTFOLIO</p>
+        </footer>
+
+    </main>
+
+
+    <!-- VIDEO POPUP MODAL -->
+    <div
+        class="video-modal"
+        id="videoModal"
+        aria-hidden="true">
+
+        <div class="video-modal-content">
+
+            <button
+                class="close-video"
+                id="closeVideo"
+                type="button"
+                aria-label="Tutup video">
+
+                &times;
+
+            </button>
+
+            <video
+                id="popupVideo"
+                controls
+                playsinline
+                preload="metadata">
+
+                Browser kamu tidak mendukung pemutaran video.
+
+            </video>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT VIDEO -->
+    <script src="../js/video.js"></script>
+
+</body>
+</html>
