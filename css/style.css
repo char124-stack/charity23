@@ -456,3 +456,64 @@ footer a {
 .filter::after {
     display: none;
 }
+
+
+/* =================================
+   UNIVERSAL ARROW ICON
+   FIX IPHONE EMOJI ISSUE
+================================= */
+
+.arrow-icon {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+
+/* Garis utama panah */
+.arrow-icon::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 2px;
+    background: currentColor;
+    left: 1px;
+    top: 9px;
+    transform: rotate(-45deg);
+    transform-origin: right center;
+}
+
+/* Kepala panah */
+.arrow-icon::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    right: 1px;
+    top: 1px;
+}
+
+/* Explore My Work */
+.main-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Tombol detail */
+.detail-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contact Me */
+footer > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
