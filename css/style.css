@@ -456,3 +456,47 @@ footer a {
 .filter::after {
     display: none;
 }
+
+
+/* =================================
+   SVG ARROW ICON
+   FIX IPHONE & DESKTOP
+================================= */
+
+.arrow-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+
+/* EXPLORE BUTTON */
+.main-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* PROJECT DETAIL BUTTON */
+.detail-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.detail-button .arrow-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+/* CONTACT BUTTON */
+footer > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
